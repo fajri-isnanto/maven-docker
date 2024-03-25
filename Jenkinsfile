@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage ('first') {
+        stage ('Build Jar by Maven') {
             steps {
-                echo "anto"
+                sh 'mvn -B -DskipTests clean install' 
             }
         }
     }
