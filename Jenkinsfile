@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'Jenkins-Agent-Docker'
+        label 'java11'
     }
     // tools{
     //     jdk 'OpenJDK11'
